@@ -2,44 +2,139 @@
 <html>
     <head>
         <title>Contact</title>
+        
+
+            
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+    <link  href="style.css">
+    
+    
+    
+        
     </head>
 
     <body>
-        <div>
-            <h1>Narmatha</h1>
-            <p>Web Developer</p>
-            <a href="index.html">Home</a>
+        <div class="container">
+
+        <div class="contact-form">
+            <h1 class="contact-form__name">Narmatha</h1>
+            <p class="contact-form__role">Web Developer</p>
+            <a class="contact-form__index" href="index.html">Home</a>
         </div>
+            <table >
+                <form>
+            
+                    <tr>
+                        <td class="contact-form__input">Name:</td>
+                        <td><input placeholder="Enter your name"></td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="contact-form__input">Email:</td>
+                        <td><input placeholder="Enter your email"></td>
+                    </tr>
+                    <tr>
+                        <td class="contact-form__textarea">Address:</td>
+                        <td><textarea></textarea></td>
+                       
+                        
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="contact-form__submit"input type="Submit">Submit</td>
+                    </tr>
+                </form>
+            </table>
+            <div class="section">
+                <p >Social Media
+                    <a href="https://www.instagram.com/">Instagram</a>
+                    <a href="https://in.linkedin.com/">Linked in</a>
+            
+                </p>
+                <p class="section__desc">&copy;Narmatha</p>
+            
+            </div>
+
+
+
+
+
+        </div>
+        
     </body>
 
 </html></Doctype>
-<table >
-    <form>
 
-        <tr>
-            <td>Name:</td>
-            <td><input placeholder="Enter your name"></td>
-        </tr>
-        <tr>
-            <td>Email:</td>
-            <td><input placeholder="Enter your email"></td>
-        </tr>
-        <tr>
-            <td>Address:</td>
-            <td><textarea></textarea></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td input type="Submit"></td>
-        </tr>
-    </form>
-</table>
-<div>
-    <p>Social Media
-        <a href="https://www.instagram.com/">Instagram</a>
-        <a href="https://in.linkedin.com/">Linked in</a>
+<style>
+    *{
+            padding:0;
+            margin:0;
+        }
+        body{
+        font-family: "Young Serif", serif;
+    }
 
-    </p>
-    <p>Narmatha</p>
 
-</div>
+
+
+.contact-form{
+margin-top:10px;
+background-color: black;
+color: white;
+padding: 20px;
+}
+.contact-form__name{
+    font-size: 100px;
+}
+.contact-form__role{
+    font-size: 30px;
+    margin-top: 10px;
+}
+.contact-form__index{
+    background-color:orangered;
+    color:white;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+
+}
+.container{
+    padding: 50px;
+}
+.contact-form__input{
+    padding:10px;
+    
+    border-bottom: solid black 1px;
+    border:none;
+}
+.section{
+        padding:20px;
+        background-color: lightblue;
+        margin-top:20px;
+        border-radius: 10px;
+} 
+.contact-form__textarea{
+    padding: 10px;
+    
+    border-bottom: solid black 1px;
+    border: none;
+}
+.contact-form__submit{
+    padding-top: 10px;
+    padding-bottom:10px;
+    padding-left:20px;
+    padding-right:20px;
+    background-color:orangered;
+    color:black;
+    border:none;
+}
+
+
+
+
+</style>

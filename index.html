@@ -1,29 +1,124 @@
 <!DOCTYPE html>
 <html>
     <head>
+
         <title>Narmatha</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+<link  href="style.css">
+
+
+
     </head>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        body{
+        font-family: "Young Serif", serif;
+    }
+
+    .section-one{
+        background-color:black;
+        color:white;
+        padding: 20px;
+    }
+    .section-one__name{
+        font-size: 60px;
+    }
+    .section-one__role{
+
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    .section-one__contact
+    {
+        background-color:orangered;
+        color:white;
+        text-decoration: none;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-top: 10px;
+    }
+    .container{
+        padding: 50px;
+    }
+    .section-two
+    {
+        margin-top:10px;
+    }
+    .section-two__desc{
+        margin-top: 10px;
+    }
+    .section-three{
+        background-color:#6426FD;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top:20px;
+        display:inline-block;
+        height: 200px;
+        vertical-align: top;
+    }
+    
+    
+    li{
+        list-style: none;
+    }
+    .section-four
+    {
+        margin-top:20px;
+        background-color:orange;
+        padding: 20px;
+        border-radius:10px;
+        display:inline-block;
+        height: 200px;
+        vertical-align: top;
+        
+    }
+    
+    .section-five{
+        padding:20px;
+        background-color: lightblue;
+        margin-top:20px;
+        border-radius: 10px;
+    }
+    .section-three li,
+    .section-four li{
+        list-style:none;
+    }
+    
+
+    </style>
 
     <body>
-        <div>
-            <h1>Narmatha</h1>
-            <p>Web Developer</p>
-            <a href="contact.html">contact</a>
+        <div class="container">
+
+
+        <div class="section-one">
+            <h1 class="section-one__name">Narmatha</h1>
+            <p class="section-one__role">Web Developer</p>
+            <a class="section-one__contact" href="contact.html">contact</a>
         </div>
-        <div>
-            <h2>About me</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae labore molestias quos asperiores ducimus quis libero error quam debitis illum. Ea sit itaque voluptatum minima, animi repellendus eligendi vero, explicabo dolor obcaecati dolores autem reiciendis ipsum voluptatibus iste, accusantium odit aliquam sunt placeat provident non id! Nisi quasi perspiciatis optio veniam obcaecati vero dolores modi repudiandae dolor harum, mollitia excepturi odio voluptatibus voluptate, ipsam explicabo, libero alias. Magnam eligendi nisi inventore, saepe recusandae minima eius pariatur reprehenderit dolores repudiandae fugiat expedita maiores libero tempore molestias cum corrupti? Omnis, veritatis reprehenderit deserunt vel repudiandae asperiores velit in voluptate quis optio deleniti, obcaecati eum sunt odit iure quam quia dolore. Ullam ipsam earum distinctio impedit</p>
+        
+        
+        <div class="section-two">
+            <h2 class="section-two__tittle">About me</h2>
+            <p class="section-two__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae labore molestias quos asperiores ducimus quis libero error quam debitis illum. Ea sit itaque voluptatum minima, animi repellendus eligendi vero, explicabo dolor obcaecati dolores autem reiciendis ipsum voluptatibus iste, accusantium odit aliquam sunt placeat provident non id! Nisi quasi perspiciatis optio veniam obcaecati vero dolores modi repudiandae dolor harum, mollitia excepturi odio voluptatibus voluptate, ipsam explicabo, libero alias. Magnam eligendi nisi inventore, saepe recusandae minima eius pariatur reprehenderit dolores repudiandae fugiat expedita maiores libero tempore molestias cum corrupti? Omnis, veritatis reprehenderit deserunt vel repudiandae asperiores velit in voluptate quis optio deleniti, obcaecati eum sunt odit iure quam quia dolore. Ullam ipsam earum distinctio impedit</p>
         </div>
-        <div>
-            <h2>My Interests</h2>
-            <ul>
+        <div class="section-three">
+            <h2 class="section-three__tittle">My Interests</h2>
+            <ul class="section-three__desc">
                 <li>Web Development</li>
                 <li>Artificial Intelligence</li>
             </ul>
         </div>
-        <div>
-            <h2>My projects</h2>
-            <ul>
+        <div class="section-four">
+            <h2 class="section-four__project">My projects</h2>
+            <ul class="section-four__desc">
                 <li>
                     <h1>Amazon E-commerce clone</h1>
                     <p>I completed Amazon E-commerce Clone With React Js(Frontend App) </p>
@@ -36,13 +131,13 @@
             </ul>
             
         </div>
-        <div>
-            <p>Social Media
+        <div class="section-five">
+            <p class="section-five__socialmedia">Social Media:
                 <a href="https://www.instagram.com/">Instagram</a>
                 <a href="https://in.linkedin.com/">Linked in</a>
 
             </p>
-            <p>@ Narmatha</p>
+            <p class="section-five__desc">&copy;Narmatha</p>
 
         </div>
     </body>
